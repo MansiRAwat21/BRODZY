@@ -1,0 +1,211 @@
+body{
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar .bg-black{
+    background-color: rgb(20, 20, 20);
+   
+}
+nav{
+   z-index: 999; 
+}
+.left-col{
+    width: 35%;
+}
+.img-bar{
+    background-color: antiquewhite;
+    width: 60%;
+    background-size: cover;
+    z-index: 2;
+    background-position: center;
+    background-repeat: no-repeat;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+
+/* ----------------About--------------------- */
+
+
+.about-1{
+    flex-basis: 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-1 img{
+    flex-basis: 100%;
+    height: 500px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-2{
+    flex-basis: 55%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/* -----------scroll bar--------- */
+.scroll-top{
+    position: fixed;
+    bottom: 1rem;
+    right:0.5rem;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.7rem;
+    font-weight:lighter;
+    color: black;
+    border: 0.2rem solid black;
+    border-radius: 50%;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    z-index: 1;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .scroll-top:hover{
+    background: black;
+    color:white;
+  }
+
+nav .fa-solid{
+    display: none;
+}
+
+/* --------testimonial----------- */
+.icons{
+    font-size: 50px;
+    color: blue;
+}
+
+.carousel-control-prev{
+    position: absolute;
+    z-index: 4;
+    margin-left: 40px;
+    color:white;
+    font-weight: 900;
+}
+.carousel-control-next{
+    margin-right: 40px;
+    color:blue;
+    position: absolute;
+    z-index: 4;
+
+    color:white;
+    font-weight: 900;
+}
+
+.partner img{
+    width: 170px;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+.fa-brands{
+    font-size: 30px;
+}
+.help img{
+    /* background-size: cover; */
+    background-position:center ;
+    width: 546px;
+    position: absolute;
+}
+.help-box{
+    background: rgba( 74, 74, 74, 0.65 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    height: 366px;
+}
+.mis-box{
+    /* margin-left: 26%; */
+    height: 700px;
+    width: 100%;
+    background: rgba( 74, 74, 74, 0.8 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.mis-box p{
+    letter-spacing: 1px;
+}
+.img-box{
+    background-color: antiquewhite;
+    background-size: cover;
+    z-index: 2;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+
+/* contect */
+.contect-left{
+    flex-basis: 35%;
+}
+.contect-right{
+    flex-basis: 60%;
+}
+.contect-left h5{
+    margin-top: 20px;
+    margin-left: 40px;
+    color: #975bdb;
+}
+.contect-img{
+    background-color: antiquewhite;
+    background-size: cover;
+    z-index: 2;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.contect-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 90%;
+    border: 0;
+    outline: none;
+    padding: 20px;
+    margin: 15px 0;
+    font-size:15px ;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+@media (max-width: 700px) {
+    .about-ri {
+    flex-basis:100% ;
+     align-items: center;
+    }
+    .about-ri p{
+        width: 100%;
+    }
+    .about-1 img{
+       width: auto;
+        height: 400px;
+    }
+    .contect-left, .contect-right{
+        flex-basis: 100%;
+    }
+    .form input, form textarea{
+        width: 100;
+    }
+
+  }
